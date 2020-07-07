@@ -1,0 +1,18 @@
+#-----------------------------------------------------------------
+# Azure Kubernetes - ADD integration  
+#  
+#-----------------------------------------------------------------
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: aks-admin-clusterrolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  # Azure AD Group "az-ad_grp_admin
+  name: "f0ef04e6-294a-4159-b563-04a8a8c66134" # "REPLACE-WITH-YOUR-AAD-GROUP-OBJECT-ID"

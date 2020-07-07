@@ -1,0 +1,38 @@
+output "client_key" {
+  value = azurerm_kubernetes_cluster.az-k8s.kube_config.0.client_key
+}
+
+
+output "client_certificate" {
+  value = azurerm_kubernetes_cluster.az-k8s.kube_config.0.client_certificate
+}
+
+output "cluster_ca_certificate" {
+  value = azurerm_kubernetes_cluster.az-k8s.kube_config.0.cluster_ca_certificate
+}
+
+output "cluster_username" {
+  value = azurerm_kubernetes_cluster.az-k8s.kube_config.0.username
+}
+
+output "cluster_password" {
+  value = azurerm_kubernetes_cluster.az-k8s.kube_config.0.password
+}
+
+output "kube_config" {
+  value = azurerm_kubernetes_cluster.az-k8s.kube_config_raw
+}
+
+output "host" {
+  value = azurerm_kubernetes_cluster.az-k8s.kube_config.0.host
+} 
+
+
+output "server-app-id" {
+  value = azuread_application.az-ad_app_server.application_id
+}
+output "client-app-id" {
+  value = azuread_application.az-ad_app_client.application_id
+}
+
+ 
