@@ -26,10 +26,8 @@
 ------------------------------------------------------------------------------
 # 1. Provision Azure Environment using Azure Terraform
 
-
-cd clouddrive/Terraform-Azure-k8s-ActiveDirectory
-
-
+ 
+ 
 terraform init
 
 terraform plan
