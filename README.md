@@ -5,7 +5,7 @@
 # High Level Architecture Diagram:
 
 
-![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/images/GB-AKS-AzureAD01.png)
+![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD01.png)
 
 
 # Configuration Flow :
@@ -32,12 +32,12 @@ terraform apply
 
 # 1.1 Add user in the new created Group
 
-![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/images/GB-AKS-AzureAD02.png)
+![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD02.png)
 
 
 # 1.2 Check and set the server and client app "Grant"
 
-![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/images/GB-AKS-AzureAD03.png)
+![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD03.png)
 
 
 re-run again the terrafrom file
@@ -73,12 +73,12 @@ az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
 
 # Do a kubectl get svc , login using a user that is a member of Azure AD Group "az-ad_grp_admin"
 
-![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/images/GB-AKS-AzureAD04.png)
+![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD04.png)
 
 
 # Do a kubectl get svc , login with using a user that is not a member of Azure AD Group "az-ad_grp_admin"
 
-![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/images/GB-AKS-AzureAD05.png)
+![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD05.png)
 
 
 
