@@ -24,7 +24,7 @@
 
 
 ------------------------------------------------------------------------------
-# 1. Provisioned environment using Azure Terraform
+# 1. Provision Azure Environment using Azure Terraform
 
 
 cd clouddrive/Terraform-Azure-k8s-ActiveDirectory
