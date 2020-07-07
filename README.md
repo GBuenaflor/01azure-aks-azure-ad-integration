@@ -46,13 +46,13 @@ terraform apply
 
 
 ------------------------------------------------------------------------------
-# 1.2 Check and set the server and client app "Grant"
+# 1.2 Check and set the server and client app "Grant admin consent for Default Directory"
 
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD03.png)
 
 
-re-run again the terrafrom file
+re-run again the terrafrom
 
 terraform plan
 
@@ -79,22 +79,23 @@ kubectl apply --namespace default -f "02RBAC-ClusterRoleBinding.yaml"
 ------------------------------------------------------------------------------
 # 3. Test the AKS connectivity
 
-
-------------------------------------------------------------------------------
+ 
 # Connect to Azure Kubernetes
 
 az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
 
-
-------------------------------------------------------------------------------
+ 
+ 
 # Do a kubectl get svc , login using a user that is a member of Azure AD Group "az-ad_grp_admin"
+
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD04.png)
 
 
 
-------------------------------------------------------------------------------
+ 
 # Do a kubectl get svc , login with using a user that is not a member of Azure AD Group "az-ad_grp_admin"
+
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD05.png)
 
