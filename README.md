@@ -52,7 +52,7 @@ terraform apply
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD03.png)
 
 
-re-run again the terrafrom
+Re-run again the terrafrom
 
 terraform plan
 
@@ -80,13 +80,13 @@ kubectl apply --namespace default -f "02RBAC-ClusterRoleBinding.yaml"
 # 3. Test the AKS connectivity
 
  
-# Connect to Azure Kubernetes
+#  - Connect to Azure Kubernetes
 
 az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
 
  
  
-# Do a kubectl get svc , login using a user that is a member of Azure AD Group "az-ad_grp_admin"
+#  -  Do a kubectl get svc , login using a user that is a member of Azure AD Group "az-ad_grp_admin"
 
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD04.png)
@@ -94,7 +94,7 @@ az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
 
 
  
-# Do a kubectl get svc , login with using a user that is not a member of Azure AD Group "az-ad_grp_admin"
+#  -  Do a kubectl get svc , login with using a user that is not a member of Azure AD Group "az-ad_grp_admin"
 
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD05.png)
@@ -102,7 +102,7 @@ az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
 
 
 
-# To implement the AKS Ingress controller using NGINX  go to this post:
+#  -  To implement the AKS Ingress controller using NGINX  go to this post:
 
 
 https://github.com/GBuenaflor/01azure-aks-ingresscontroller-https
@@ -110,10 +110,12 @@ https://github.com/GBuenaflor/01azure-aks-ingresscontroller-https
 
 
 
-# To implement the AKS Ingress controller using Appplication Gateway go to this post:
+#  -  To implement the AKS Ingress controller using Appplication Gateway go to this post:
 
 
 https://github.com/GBuenaflor/01azure-aks-ingresscontroller-agic
+
+
 
 
 
