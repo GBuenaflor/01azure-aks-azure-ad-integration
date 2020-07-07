@@ -37,7 +37,7 @@ terraform apply
 
 
 ------------------------------------------------------------------------------
-# 1.1 Add user in the new created Group
+# 1.1 Add user(s) in the new created Azure AD Group that will manage the AKS Cluster
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD02.png)
 
