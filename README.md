@@ -102,7 +102,7 @@ az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
 
 
 
-#  -  To implement the AKS Ingress controller using NGINX  go to this post:
+#  -  Next Post: To implement the AKS Ingress controller using NGINX  go to this link:
 
 
 https://github.com/GBuenaflor/01azure-aks-ingresscontroller-https
@@ -110,7 +110,7 @@ https://github.com/GBuenaflor/01azure-aks-ingresscontroller-https
 
 
 
-#  -  To implement the AKS Ingress controller using Appplication Gateway go to this post:
+#  -  Next Post: To implement the AKS Ingress controller using Appplication Gateway go to this link:
 
 
 https://github.com/GBuenaflor/01azure-aks-ingresscontroller-agic
