@@ -47,15 +47,10 @@ terraform apply
 # 1.2 Check and set the server and client app "Grant admin consent for Default Directory"
 
 
+
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD03.png)
 
-
-Re-run again the terrafrom
-
-terraform plan
-
-terraform apply
-
+ 
 
 ------------------------------------------------------------------------------
 # 2. Deploy the kubernetes Files
