@@ -3,7 +3,7 @@
 # Identity and Access Management through Azure AD and RBAC (Cluster Level)
 
 
-High Level Architecture Diagram:
+High-Level Architecture Diagram:
 
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD01.png)
@@ -96,24 +96,25 @@ az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
 
 
 
-#  -  Next Post: To implement the AKS Ingress controller using NGINX  go to this link:
+------------------------------------------------------------------------------
 
-
+#  To implement Ingress controller:
+   
+   
+NGINX-Ingress Controller:
 https://github.com/GBuenaflor/01azure-aks-ingresscontroller-https
 
 
 
 
-#  -  Next Post: To implement the AKS Ingress controller using Appplication Gateway go to this link:
-
-
+Appplication Gateway Ingress Controller:
 https://github.com/GBuenaflor/01azure-aks-ingresscontroller-agic
 
 
 
 
-
-
+<br>
+<br>
+<br>
 
 Note: My Favorite > Microsoft Technologies.
-
