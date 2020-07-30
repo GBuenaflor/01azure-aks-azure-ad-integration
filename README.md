@@ -28,13 +28,11 @@ Configuration Flow :
 # 1. Provision Azure Environment using Azure Terraform
 
  
- 
+ ``` 
 terraform init
-
 terraform plan
-
 terraform apply
-
+```
 
 
 ------------------------------------------------------------------------------
@@ -56,18 +54,15 @@ terraform apply
 ------------------------------------------------------------------------------
 # 2. Deploy the kubernetes Files
 
-
+  ``` 
 az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s --admin 
 
 cd clouddrive/Terraform-Azure-k8s-ActiveDirectory/K8sDeployment
 
-
-kubectl apply --namespace default -f "01webandsql.yaml"
-		
+kubectl apply --namespace default -f "01webandsql.yaml"		
 kubectl apply --namespace default -f "02RBAC.yaml"
-
 kubectl apply --namespace default -f "02RBAC-ClusterRoleBinding.yaml"
-  
+  ``` 
    
   
 ------------------------------------------------------------------------------
@@ -76,8 +71,9 @@ kubectl apply --namespace default -f "02RBAC-ClusterRoleBinding.yaml"
  
 #  - Connect to Azure Kubernetes
 
+``` 
 az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
-
+``` 
  
  
 #  -  Do a kubectl get svc , login using a user that is a member of Azure AD Group "az-ad_grp_admin"
