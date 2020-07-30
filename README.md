@@ -78,6 +78,9 @@ az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
  
 #  -  Do a kubectl get svc , login using a user that is a member of Azure AD Group "az-ad_grp_admin"
 
+```
+kubectl get svc
+```
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD04.png)
 
@@ -86,6 +89,9 @@ az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
  
 #  -  Do a kubectl get svc , login with using a user that is not a member of Azure AD Group "az-ad_grp_admin"
 
+```
+kubectl get svc
+```
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD05.png)
 
