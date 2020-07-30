@@ -6,7 +6,7 @@
 High-Level Architecture Diagram:
 
 
-![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD01.png)
+![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD01A.png)
 
 
 Configuration Flow :
