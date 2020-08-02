@@ -25,7 +25,7 @@ Configuration Flow :
 
 
 ------------------------------------------------------------------------------
-# 1. Provision Azure Environment using Azure Terraform
+## 1. Provision Azure Environment using Azure Terraform
 
  
  ``` 
@@ -36,14 +36,14 @@ terraform apply
 
 
 ------------------------------------------------------------------------------
-# 1.1 Add user(s) in the new created Azure AD Group that will manage the AKS Cluster
+### 1.1 Add user(s) in the new created Azure AD Group that will manage the AKS Cluster
 
 ![Image description](https://github.com/GBuenaflor/01azure-aks-azure-ad-integration/blob/master/Images/GB-AKS-AzureAD02.png)
 
 
 
 ------------------------------------------------------------------------------
-# 1.2 Check and set the server and client app "Grant admin consent for Default Directory"
+### 1.2 Check and set the server and client app "Grant admin consent for Default Directory"
 
 
 
@@ -52,7 +52,7 @@ terraform apply
  
 
 ------------------------------------------------------------------------------
-# 2. Deploy the kubernetes Files
+## 2. Deploy the kubernetes Files
 
   ``` 
 az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s --admin 
@@ -66,17 +66,17 @@ kubectl apply --namespace default -f "02RBAC-ClusterRoleBinding.yaml"
    
   
 ------------------------------------------------------------------------------
-# 3. Test the AKS connectivity
+## 3. Test the AKS connectivity
 
  
-#  - Connect to Azure Kubernetes
+###  - Connect to Azure Kubernetes
 
 ``` 
 az aks get-credentials --resource-group Env02-AD-Integration-RG -n az-k8s
 ``` 
  
  
-#  -  Do a kubectl get svc , login using a user that is a member of Azure AD Group "az-ad_grp_admin"
+###  -  Do a kubectl get svc , login using a user that is a member of Azure AD Group "az-ad_grp_admin"
 
 ```
 kubectl get svc
@@ -87,7 +87,7 @@ kubectl get svc
 
 
  
-#  -  Do a kubectl get svc , login with using a user that is not a member of Azure AD Group "az-ad_grp_admin"
+###  -  Do a kubectl get svc , login with using a user that is not a member of Azure AD Group "az-ad_grp_admin"
 
 ```
 kubectl get svc
